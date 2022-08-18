@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Challenge Alura_Encriptador</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="ingresar">
+                <h1>a<span>lura Challenge</span></h1>
+                <div class="wrapper">
+                    <h2>Sistema de Encriptado/Desincriptado</h2>
+                    <textarea id="text_input" spellcheck="false" placeholder="Escribe aqui..."></textarea>
+                </div>
+                <div class="acciones">
+                    <div class="aviso">
+                        <img src="./img/exclamacion.png" alt="">
+                        <p>Solo letras minusculas y sin acentos</p>
+                    </div>
+                    <div class="content_botones">
+                        <button class="btn_en"><span class="button">Encriptar</span> </button>
+                        <button class="btn_des"><span class="button">Desincriptar</span> </button>
+                    </div>
+                </div>
+            </section>
+            <section class="salida">
+                <div class="mensaje_nada">
+                    <img src="./img/busqueda.svg" alt="">
+                    <p>Ningun mensaje fue encontrado</p>
+                    <p>Ingrese el texto que deseas encriptar o desencriptar.</p>
+                </div>
+                <div class="mensaje_salida ">
+                    <textarea id="resultado" name="" id="" cols="30" rows="10" readonly></textarea>
+                    <button class="copiar">Copiar</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./js/textarea.js"></script>
+    <script src="./js/operaciones.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</body>
+</html>
